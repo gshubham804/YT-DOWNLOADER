@@ -24,16 +24,3 @@ app.listen(4000, () => {
   console.log("success");
 });
 
-// const bodyParser = require('body-parser');
-// const server = express();
-// // use middleware
-// server.use(cors());
-// server.use(bodyParser.json());
-// server.post('/demo',(req,res)=>{
-//     console.log(req.body);
-//     res.json(req.body);
-// })
-
-// server.listen(8080,()=>{
-//     console.log("success");
-// })

@@ -11,26 +11,6 @@ import Axios from "axios";
 const { Title } = Typography;
 
 function App() {
-  // const [form, setForm] = useState({})
-  // const handleForm=(e)=>{
-  //   setForm({
-  //     ...form,
-  //     [e.target.name]:e.target.value,
-  //   })
-  // }
-
-  // const handleSubmit=async (e)=>{
-  //   e.preventDefault();
-  //   const response = await fetch('http://localhost:8080/demo',{
-  //     method:'POST',
-  //     body:JSON.stringify(form),
-  //     headers:{
-  //       'Content-Type':'application/json',
-  //     }
-  //   })
-  //   const data = await response.json();
-  //   console.log(data);
-  // }
   const [form] = Form.useForm();
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -138,15 +118,6 @@ function App() {
           )}
         </div>
       </div>
-      {/* <div>
-      <form onSubmit={handleSubmit}>
-        <span>UserName</span>
-        <input type="text" name="username" onChange={handleForm} />
-        <span>Password</span>
-        <input type="password" name="password" onChange={handleForm} />
-        <input type="submit" value="Submit" />
-      </form>
-    </div> */}
     </>
   );
 }
